@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Animated Login & Register | Ludiflex</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="form-header">
+        <div class="titles">
+          <span class="title-login">Login</span>
+          <span class="title-register">Register</span>
+        </div>
+      </div>
+
+      <div class="login-form">
+        <div class="input-box">
+          <input
+            type="text"
+            id="user"
+            class="input-field"
+            autocomplete="off"
+            required
+          />
+          <label for="user" class="label">Username</label>
+          <i class="bx bx-user icon"></i>
+        </div>
+        <div class="input-box">
+          <input
+            type="password"
+            id="pass"
+            class="input-field"
+            autocomplete="off"
+            required
+          />
+          <label for="pass" class="label">Password</label>
+          <i class="bx bx-lock-alt icon"></i>
+        </div>
+        <div class="form-cols">
+          <div class="col-1"></div>
+          <div class="col-2">
+            <a href="#">Forgot password?</a>
+          </div>
+        </div>
+        <div class="input-box">
+          <button class="btn-submit" id="SignInBtn">
+            Sign In <i class="bx bx-log-in"></i>
+          </button>
+        </div>
+        <div class="switch-form">
+          <span
+            >Don't have an account?
+            <a href="#" onclick="registerFunction()">Register</a></span
+          >
+        </div>
+      </div>
+
+      <div class="register-form">
+        <div class="input-box">
+          <input
+            type="text"
+            id="reg-user"
+            class="input-field"
+            autocomplete="off"
+            required
+          />
+          <label for="reg-user" class="label">Username</label>
+          <i class="bx bx-user icon"></i>
+        </div>
+        <div class="input-box">
+          <input
+            type="text"
+            id="email"
+            class="input-field"
+            autocomplete="off"
+            required
+          />
+          <label for="email" class="label">Email</label>
+          <i class="bx bx-envelope icon"></i>
+        </div>
+        <div class="input-box">
+          <input
+            type="password"
+            id="reg-pass"
+            class="input-field"
+            autocomplete="off"
+            required
+          />
+          <label for="reg-pass" class="label">Password</label>
+          <i class="bx bx-lock-alt icon"></i>
+        </div>
+        <div class="form-cols">
+          <div class="col-1">
+            <input type="checkbox" id="remember" />
+            <label for="remember"> I agree to the terms & condition</label>
+          </div>
+          <div class="col-2"></div>
+        </div>
+        <div class="input-box">
+          <button class="btn-submit" id="SignUpBtn">
+            Sign Up <i class="bx bx-user-plus"></i>
+          </button>
+        </div>
+        <div class="switch-form">
+          <span
+            >Already have an account?
+            <a href="#" onclick="loginFunction()">Login</a></span
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="toaster">
+      <p>Logged In !</p>
+    </div>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
